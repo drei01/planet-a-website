@@ -1,7 +1,8 @@
 <h1>
-	<a href="{{ include.post.url }}" itemprop="name">
+	<a href="{{ include.post.url }}">
 		{{ include.post.title }}
 	</a>
+	<meta itemprop="name" content="{{ include.post.title }}"/>
 </h1>
 <div class="subtitle">
 	<time datetime="{{ include.post.date | date_to_xmlschema }}">
