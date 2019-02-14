@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="msapplication-TileColor" content="#846add">
+		<meta name="msapplication-TileImage" content="{{ site.baseurl }}/images/icons/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#846add">
+
+		{% seo %}
+		{% feed_meta %}
+
+		<link href="//fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+		<link rel="stylesheet" media="screen" href="{{ site.baseurl }}/css/screen.css">
+		{% if page.print_stylesheet %}
+			<link rel="stylesheet" media="print" href="{{ site.baseurl }}/css/print.css">
+		{% endif %}
+		<link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/images/icons/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}/images/icons/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/images/icons/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl }}/images/icons/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/images/icons/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl }}/images/icons/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/images/icons/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}/images/icons/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/images/icons/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="{{ site.baseurl }}/images/icons/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/icons/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="{{ site.baseurl }}/images/icons/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/images/icons/favicon/favicon-16x16.png">
+		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/icons/favicon/favicon.ico"/>
+
+		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128416656-1"></script>
+			<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', '{{ site.google_analytics_key }}');
+			</script>
+		{% endif %}
+	</head>
+	<body>
+		{% include navigation.html %}
+		<header>
+			<a href="{{site.baseurl }}/">
+				<img src="{{ site.baseurl }}{{ site.baseurl }}/images/planet-a-logo.svg" height="180" alt="logo">
+				<span>Planet A</span>
+				<small>Zero Waste, Plant Based</small>
+			</a>
+		</header>
+		<div class="container main-content">
+			<section class="content">{{ content }}</section>
+			{% include sidebar.html %}
+		</div>
+		<footer>
+			<div class="container">
+				<hr>
+				&copy; {{ site.title }} {{ site.time | date: "%Y" }}. All rights reserved.
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<h1>
+	<a href="{{ include.post.url }}" itemprop="name">
+		{{ include.post.title }}
+	</a>
+</h1>
+<div class="subtitle">
+	<time datetime="{{ include.post.date | date_to_xmlschema }}">
+		{{ include.post.date | date: "%B %-d, %Y" }}
+	</time>
+	|
+	{% case include.post.recipe.diet %}
+		{% when "vegan" %}
+		{% include recipe-diet-icon.html diet="vegan" %}
+
+		{% when "vegetarian" %}
+		{% include recipe-diet-icon.html diet="vegan" %}
+	{% endcase %}
+</div>
