@@ -9,6 +9,10 @@
 		{{ include.post.date | date: "%B %-d, %Y" }}
 	</time>
 	|
+	{% for category in include.post.categories %}
+		<span itemprop="recipeCategory">{{category}}</span>
+	{% endfor %}
+	|
 	{% case include.post.recipe.diet %}
 		{% when "vegan" %}
 		{% include recipe-diet-icon.html diet="vegan" %}

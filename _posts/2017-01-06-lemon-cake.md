@@ -4,6 +4,7 @@ title: Lemon Cake
 categories:
     - Cakes
 featured_image: https://source.unsplash.com/NAN22eh754c/1560x940
+image: https://source.unsplash.com/NAN22eh754c/1560x940
 recipe:
     diet: vegetarian
     servings: 12 slices

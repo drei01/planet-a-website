@@ -5,6 +5,7 @@ categories:
     - Cupcakes
     - Cakes
 featured_image: https://source.unsplash.com/qJ0zGkrE1Zg/1560x940
+image: https://source.unsplash.com/qJ0zGkrE1Zg/1560x940
 recipe:
     diet: vegan
     servings: 12 cupcakes
