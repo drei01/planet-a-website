@@ -3,14 +3,21 @@ layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/Recipe">
 	{% include post-heading.html post=page post_page=true %}
+
 	<div class="image">
 		<img src="{{ page.featured_image }}" alt="{{ page.title }}" itemprop="image">
 	</div>
 
 	<ul id="recipe" class="recipe-overview">
 		<li title="Servings" itemprop="recipeYield">{% include recipe-icon.html icon="quantity" %}<span>{{ page.recipe.servings }}</span></li>
-		<li title="Prep Time" itemprop="prepTime">{% include recipe-icon.html icon="time" %}<span>{{ page.recipe.prep }}</span></li>
-		<li title="Cook Time" itemprop="cookTime">{% include recipe-icon.html icon="cook" %}<span>{{ page.recipe.cook }}</span></li>
+		<li title="Prep Time">
+			{% include recipe-icon.html icon="time" %}<span>{{ page.recipe.prep }}</span>
+			<meta itemprop="prepTime" content="{{page.recipe.prepISO8601}}">
+		</li>
+		<li title="Cook Time">
+			{% include recipe-icon.html icon="cook" %}<span>{{ page.recipe.cook }}</span>
+			<meta itemprop="cookTime" content="{{page.recipe.cookISO8601}}">
+		</li>
 		{% if page.recipe.total %}
 			<meta itemprop="totalTime" content="{{page.recipe.total}}">
 		{% endif %}
@@ -35,10 +42,21 @@ layout: default
 		<a class="pinterest" title="Share this recipe on Pinterest" href="https://pinterest.com/pin/create/link/?url={{ share_url }}&amp;description={{ page.description }}">{% include social-icon.html icon="Pinterest" %}</a>
 		<a class="email" title="Share this recipe via email" href="mailto:?subject=I've%20found%20a%20great%20recipe&amp;body=Check%20it%20out%20-%20{{ share_url }}">{% include social-icon.html icon="Email" %}</a>
 	</div>
+	
 
 	<div class="recipe-body">
+		<div itemprop="description">
+			{{ page.description }}
+		</div>
 		{{ content }}
 	</div>
+
+	<footer class="footer">
+		<div class="author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+			<p itemprop="name">Matthew Reid</p>
+			<meta itemprop="sameAs" content="https://twitter.com/Matthew_Reid">
+		</div>
+	</footer>
 
 	<div class="cta">
 		<h2>More delicious recipes</h2>

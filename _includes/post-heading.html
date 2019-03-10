@@ -3,6 +3,7 @@
 		{{ include.post.title }}
 	</a>
 	<meta itemprop="name" content="{{ include.post.title }}"/>
+	<meta itemprop="keywords" content="{{ include.post.title }}"/>
 </h1>
 <div class="subtitle">
 	<time datetime="{{ include.post.date | date_to_xmlschema }}">
@@ -21,3 +22,4 @@
 		{% include recipe-diet-icon.html diet="vegan" %}
 	{% endcase %}
 </div>
+<meta itemprop="recipeCuisine" content="{include.post.cuisine}">
