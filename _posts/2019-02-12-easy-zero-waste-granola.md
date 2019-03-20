@@ -1,12 +1,12 @@
 ---
-date: 2017-01-05
+date: 2019-02-12
 title: Easy Zero Waste Granola
 categories:
     - Breakfast
 featured_image: https://s3-eu-west-1.amazonaws.com/planet-a/zero-waste-granola-2.jpg
 image: https://s3-eu-west-1.amazonaws.com/planet-a/zero-waste-granola-2.jpg
 cuisine: european
-description: This mega easy granola is tasty, healthy and free from refined sugar.
+description: This mega easy granola recipe is tasty, healthy and free from refined sugar.
 recipe:
     diet: vegan
     servings: 8 - 10 bowls
