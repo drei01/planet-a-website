@@ -31,11 +31,11 @@ recipe:
         * {:itemprop='recipeIngredient'} zest of 1/2 lemon
     directions_markdown: |-
         1. Pre heat oven to 392°F / 200°C
-        2. Spread the choppied squash in a large baking tray and rub with 1tbsp olive oil, the paprika, crushed garlic and half the sage (torn up). Put the tray in the oven to cook for 40 minutes
-        3. Heat a deep frying pan on a medium heat. Add the other table spoon of oil, 1 knob of button and the onions. Sweat the onions slowly until they turn transparent, they shouldn't be brown (don't worry too much if this happens though).
+        2. Spread the chopped squash in a large baking tray and rub with 1tbsp olive oil, the paprika, crushed garlic and half the sage (torn up). Put the tray in the oven to roast for 40 minutes
+        3. Heat a deep frying pan on a medium heat. Add the other table spoon of oil, 1 knob of butter and the onions. Sweat the onions slowly until they turn transparent, they shouldn't be brown (don't worry too much if this happens though).
         4. Stir the rice into the onions until covered in the butter. Leave to cook until the rice starts to turn transparent.
         5. Add the wine and simmer for 2 minutes.
-        6. Add the stock slowly and simmer for ~25 minutes. The risotto should be creamy, you can add more liquid if it starts to go dry. The rice should have a slight bite to it (al dente).
+        6. Add half of the stock and simmer for ~25 minutes, topping up as necessary. The risotto should be creamy, you can add more liquid if it starts to go dry. The rice should have a slight bite to it (al dente).
         7. While the risotto is simmering, heat a small frying pan and fry the rest of the sage, the sunflower seeds, lemon zest and a pinch of salt. Once the seeds start to brown, take off the heat and leave to rest.
         8. When the squash is cooked, remove from the oven and mash half of it lightly with a fork. Stir through the risotto which should be done by now. Add the rest of the squash whole, the final knob of butter and the grated cheese. Stir it all together and grind in plenty of pepper.
         9. Serve a few good dollops in a bowl and sprinkle with the toasted seed/sage mixture.
