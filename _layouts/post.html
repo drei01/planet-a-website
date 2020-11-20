@@ -10,8 +10,9 @@ layout: default
     </div>
 
     <ul id="recipe" class="recipe-overview">
-        <li title="Servings" itemprop="recipeYield">
-            {% include recipe-icon.html icon="quantity" %}<span>{{ page.recipe.servings }}</span>
+        <li title="Servings">
+            {% include recipe-icon.html icon="quantity" %}<span itemprop="recipeYield">{{ page.recipe.servings }}</span>
+            servings
         </li>
         <li title="Prep Time">
             {% include recipe-icon.html icon="time" %}<span>{{ page.recipe.prep }}</span>
@@ -129,4 +130,18 @@ layout: default
             }
         });
     });
+</script>
+<script type="text/javascript">
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({ widget: 'Rating', id: 28282 });
+    (function () {
+        if ('WIDGETPACK_LOADED' in window) return;
+        WIDGETPACK_LOADED = true;
+        var mc = document.createElement('script');
+        mc.type = 'text/javascript';
+        mc.async = true;
+        mc.src = 'https://embed.widgetpack.com/widget.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
 </script>

@@ -9,7 +9,7 @@ cuisine: european
 description: This mega easy granola recipe is tasty, healthy and free from refined sugar.
 recipe:
     diet: vegan
-    servings: 8 - 10 bowls
+    servings: 8
     prep: 15 minutes
     prepISO8601: PT15M
     cook: 15 minutes

@@ -9,7 +9,7 @@ cuisine: european
 description: An easy, creamy risotto recipe with roasted butternut squash makes a great quick dinner
 recipe:
     diet: vegetarian
-    servings: 4 servings
+    servings: 4
     prep: 15 minutes
     prepISO8601: PT15M
     cook: 40 minutes
