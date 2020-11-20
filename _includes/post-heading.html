@@ -8,7 +8,7 @@
     | {% for category in include.post.categories %}
     <span itemprop="recipeCategory">{{category}}</span>
     {% endfor %} | {% case include.post.recipe.diet %} {% when "vegan" %} {% include recipe-diet-icon.html diet="vegan"
-    %} {% when "vegetarian" %} {% include recipe-diet-icon.html diet="vegetarian" %} {% endcase %}
+    %} {% when "vegetarian" %} {% include recipe-diet-icon.html diet="vegetarian" %} {% endcase %} |
     <div id="wpac-rating"></div>
 </div>
 <meta itemprop="recipeCuisine" content="{include.post.cuisine}" />

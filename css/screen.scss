@@ -30,3 +30,13 @@ header a small {
     display: block;
     font-size: 1.1em;
 }
+
+/* RATINGS */
+#wpac-rating,
+#wpac-rating .wp-r {
+    display: inline;
+}
+
+#wpac-rating .wp-r .wp-rating-score {
+    font-weight: normal !important;
+}
